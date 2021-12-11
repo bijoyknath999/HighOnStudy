@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:id="@+id/lytPagerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/special_data_web"
+        android:gravity="center"
+        android:text="This is Text view of special DATA"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_main_featured"
+        android:gravity="left"
+        android:layout_below="@+id/special_data_web">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/trending_articale"
+            android:textStyle="bold"
+            android:textColor="@color/defaultcolor"
+            android:textSize="20sp"/>
+
+        <View android:layout_gravity="center"
+            android:background="@color/defaultcolor"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/rr_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/layout_main_featured">
+
+        <com.github.islamkhsh.CardSliderViewPager
+            android:id="@+id/home_slider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_110dp"
+            android:layout_marginTop="10dp"
+            app:cardSlider_otherPagesWidth="24dp"
+            app:cardSlider_pageMargin="6dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

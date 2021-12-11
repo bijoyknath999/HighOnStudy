@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/card_view_top"
+        app:cardElevation="0dp"
+        android:elevation="0dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_screen_view_pager_layout"
+            android:background="@color/slider1"
+            android:padding="@dimen/padding_8dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/recent_post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_22sp"
+                android:padding="@dimen/padding_8dp"
+                tools:text="This is a Test Text..." />
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>

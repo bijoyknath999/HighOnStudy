@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borderline"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        card_view:cardElevation="0dp"
+        app:cardCornerRadius="10dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        style="@style/CardView.Light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/dialog_back"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cardborder"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_cat_jobs"
+            android:gravity="left"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Univertiy Updates"
+                android:textSize="25sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:fontFamily="@font/phenomena_bold"
+                android:padding="5dp"
+                android:layout_margin="10dp"/>
+
+            <View android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textSize="22sp"
+        android:textColor="@color/defaultcolor"
+        android:id="@+id/action_info"
+        android:textStyle="bold"
+        android:fontFamily="@font/phenomena_bold"
+        android:padding="10dp"
+        android:background="@drawable/oneline"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:drawableTint="@color/defaultcolor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_jobs"
+        android:text="Jobs"
+        android:textSize="22sp"
+        android:textColor="@color/defaultcolor"
+        android:background="@drawable/oneline"
+        android:textStyle="bold"
+        android:fontFamily="@font/phenomena_bold"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:drawableTint="@color/defaultcolor"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_admission"
+        android:background="@drawable/oneline"
+        android:text="Admission"
+        android:textSize="22sp"
+        android:textColor="@color/defaultcolor"
+        android:textStyle="bold"
+        android:fontFamily="@font/phenomena_bold"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:drawableTint="@color/defaultcolor"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_admit_catd"
+        android:background="@drawable/oneline"
+        android:text="Admit Card"
+        android:textSize="22sp"
+        android:textColor="@color/defaultcolor"
+        android:textStyle="bold"
+        android:fontFamily="@font/phenomena_bold"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:drawableTint="@color/defaultcolor"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_result"
+        android:background="@drawable/oneline"
+        android:text="Result"
+        android:textSize="22sp"
+        android:textColor="@color/defaultcolor"
+        android:textStyle="bold"
+        android:fontFamily="@font/phenomena_bold"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:drawableTint="@color/defaultcolor"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_time_table"
+        android:background="@drawable/oneline"
+        android:text="Time Table"
+        android:textSize="22sp"
+        android:textColor="@color/defaultcolor"
+        android:textStyle="bold"
+        android:fontFamily="@font/phenomena_bold"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:drawableTint="@color/defaultcolor"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp"
+    style="@style/CardView.Light">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardborder"
+        android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:padding="@dimen/margin_8dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/defaultcolor"
+            android:textSize="16sp"
+            tools:text="This is a test text. Please, don't take it seriously!" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/last_date_layout"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_last_date_text"
+                android:text="Last Date"
+                android:textSize="12sp"
+                android:textColor="@color/defaultcolor"
+                android:fontFamily="@font/open_sans_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_last_date"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/open_sans_extrabold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_last_month"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/defaultcolor"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borderline">
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:id="@+id/job_post_whatsapp"
+                android:src="@drawable/ic_whatsapp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:id="@+id/job_post_telegram"
+                android:layout_weight="1"
+                android:src="@drawable/ic_telegram"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:id="@+id/job_post_save"
+                android:layout_weight="1"
+                android:src="@drawable/ic_un_star"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

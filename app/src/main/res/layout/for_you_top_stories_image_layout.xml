@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/for_you_top_stories_image_layout_layout"
+    android:layout_marginTop="-10dp"
+    android:visibility="gone">
+
+    <com.github.islamkhsh.CardSliderViewPager
+        android:id="@+id/for_you_top_stories_image_layout_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardSlider_otherPagesWidth="0dp"
+        app:cardSlider_pageMargin="0dp"/>
+
+</RelativeLayout>

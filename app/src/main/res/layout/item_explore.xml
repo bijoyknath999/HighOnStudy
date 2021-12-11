@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/RippleStyleBlack">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/explore_icon_bg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/badge_circle"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/cardbordercolor"/>
+
+            <ImageView
+                android:id="@+id/explore_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/defaultcolor"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/explore_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:maxWidth="45dp"
+            android:singleLine="true"
+            app:fontFamily="@font/quicksand_bold"/>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>

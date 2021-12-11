@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/width_190dp"
+        android:layout_height="65dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="30dp"
+        android:id="@+id/card_view_for_you_education"
+        style="@style/CardView.Light"
+        app:cardBackgroundColor="#FFC823"
+        app:cardElevation="0dp"
+        android:elevation="0dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_150dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:background="@drawable/education_item_bg"
+            android:layout_marginRight="3dp"
+            android:layout_gravity="center|right"
+            >
+        <TextView
+            android:id="@+id/for_you_education_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_20sp"
+            tools:text="Engineering" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

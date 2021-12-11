@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytRecentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_main_jobs"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/customheader"
+        android:padding="8dp"
+        android:layout_marginLeft="@dimen/margin_14dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:id="@+id/txt_featured"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/jobs_by_qualification"
+        android:textStyle="bold"
+        android:textColor="@color/defaultcolor"
+        android:textSize="@dimen/text_size_20sp" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/fragment_jobs_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_main_jobs"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"></include>
+
+</RelativeLayout>

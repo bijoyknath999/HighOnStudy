@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:nestedScrollingEnabled="false">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="70dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLatestJob"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:layoutAnimation="@anim/layout_anim"
+        android:layout_marginLeft="@dimen/margin_4dp"
+        android:layout_marginRight="@dimen/margin_4dp"
+        android:nestedScrollingEnabled="false" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:id="@+id/rv_more_load_button"
+                android:layout_below="@+id/rvLatestJob"
+                android:gravity="center"
+                android:background="@drawable/button_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Load More »"
+                    android:textColor="@color/defaultcolor"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rv_lj_itemload"
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/rv_more_load_button"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/colorAccent" />
+
+        </RelativeLayout>
+
+</ScrollView>
+
+
+<include layout="@layout/view_common_loader" />
+
+
+</RelativeLayout>
+

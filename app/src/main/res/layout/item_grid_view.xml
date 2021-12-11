@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_top"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp"
+    style="@style/CardView.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cardborder2">
+
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="@dimen/margin_8dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/quattrocentosans_regular"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="This is a test text. Please, don't take it seriously!" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

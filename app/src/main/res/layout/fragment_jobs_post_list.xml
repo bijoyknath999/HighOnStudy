@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:nestedScrollingEnabled="false">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_250dp"
+                android:layout_marginLeft="@dimen/margin_4dp"
+                android:layout_marginRight="@dimen/margin_4dp"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:visibility="gone">
+
+                <include layout="@layout/item_home_screen_view_pager" />
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPosts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_top"
+                android:layoutAnimation="@anim/layout_anim"
+                android:layout_marginBottom="@dimen/margin_4dp"
+                android:layout_marginLeft="@dimen/margin_4dp"
+                android:layout_marginRight="@dimen/margin_4dp"
+                android:nestedScrollingEnabled="false" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rv_itemload"
+                style="@style/SpinKitView.Large.ThreeBounce"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/rvPosts"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/colorAccent" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/view_common_loader" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

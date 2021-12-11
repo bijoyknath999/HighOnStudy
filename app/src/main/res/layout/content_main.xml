@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/fragment_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Menus Recycler -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMenus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_14dp"
+                        android:layout_marginRight="@dimen/margin_14dp"
+                        android:visibility="gone"
+                        android:nestedScrollingEnabled="false" />
+
+                    <View
+                        android:id="@+id/viewDivider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="@color/toolbar_boarder" />
+
+                    <!-- Trending JObs SLider -->
+                    <include layout="@layout/content_main_featured" />
+
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        app:adSize="SMART_BANNER"
+                        app:adUnitId="@string/banner_id" />
+
+                    <!-- Jobs Slider -->
+                    <include layout="@layout/content_main_cat_jobs" />
+
+                    <!-- Recent Posts Recycler -->
+                    <include layout="@layout/content_main_jobs" />
+
+                    <include layout="@layout/content_main_jobs_2"/>
+
+                    <include layout="@layout/content_main_jobs_3"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_common_loader" />
+
+</RelativeLayout>

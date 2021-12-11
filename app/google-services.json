@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "543334934309",
+    "project_id": "highonstudy",
+    "storage_bucket": "highonstudy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543334934309:android:252ae1f035cd83302f9ccc",
+        "android_client_info": {
+          "package_name": "highonstudy.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543334934309-hb3kadomae69ghveva6opt9n7iucd0ci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdLhMNnNq1noMDMmazv6OeS4CR-9IlWxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543334934309-hb3kadomae69ghveva6opt9n7iucd0ci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

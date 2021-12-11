@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_for_you"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/content_layout_for_you"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
+
+            <include layout="@layout/for_you_location"/>
+
+            <include layout="@layout/for_you_top_stories"/>
+
+            <include layout="@layout/for_you_top_stories_image_layout"/>
+
+            <include layout="@layout/for_you_education"/>
+
+            <include layout="@layout/for_you_youtube"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/view_common_loader" />
+
+</RelativeLayout>

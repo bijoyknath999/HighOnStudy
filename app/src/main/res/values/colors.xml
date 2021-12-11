@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="defaultcolor">#46342D</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#002347</color>
+    <color name="colorPrimary21">#cccccc</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="darkblue">#002347</color>
+
+    <color name="transparent">#00000000</color>
+    <!--Common colors-->
+    <color name="green">#00BF9A</color>
+    <color name="imgPlaceholder">#ffffff</color>
+
+    <color name="notification_card_bg">#EFEFEF</color>
+
+    <color name="toolbar_boarder">#e5e6ea</color>
+
+
+    <color name="slider1">#FF512F</color>
+    <color name="toolbarbgcolor">#ffffff</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="cardbordercolor">#d0d0d0</color>
+    <color name="colorview1">#FE835C</color>
+    <color name="colorview2">#2200FE</color>
+    <color name="colorview3">#EDB02E</color>
+    <color name="yellow">#ffc803</color>
+
+
+</resources>
